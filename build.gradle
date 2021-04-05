@@ -4,7 +4,7 @@ plugins {
 }
 
 version = "0.1"
-group = "cz.oksystem"
+group = "cz.oksystem.autocomplete"
 
 repositories {
     mavenCentral()
@@ -15,7 +15,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("cz.oksystem.*")
+        annotations("cz.oksystem.autocomplete.*")
     }
 }
 
@@ -29,7 +29,7 @@ dependencies {
 
 
 application {
-    mainClass.set("cz.oksystem.Application")
+    mainClass.set("cz.oksystem.autocomplete.Application")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("11")

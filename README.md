@@ -1,3 +1,7 @@
+## Zprovoznění v IntelliJ Idea
+1. Při problémech s certifikáty vypnout jejich kontrolu příkazem 'git config --global http.sslVerify false'
+2. Nastavit v Settings 'Gradle JVM' na '11'
+
 ## Micronaut 2.4.2 Documentation
 
 - [User Guide](https://docs.micronaut.io/2.4.2/guide/index.html)

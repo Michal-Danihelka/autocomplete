@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: cz.oksystem
+defaultPackage: cz.oksystem.autocomplete
 testFramework: junit
 sourceLanguage: java
 buildTool: gradle
