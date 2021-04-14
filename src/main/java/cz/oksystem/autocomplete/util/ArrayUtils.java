@@ -1,6 +1,8 @@
 package cz.oksystem.autocomplete.util;
 
-// Pomocné metody pro práci s poli, převážně pro vytváření int[] spojováním vstupních parametrů
+/**
+ * Pomocné metody pro práci s poli, převážně pro vytváření int[] spojováním vstupních parametrů
+ */
 public final class ArrayUtils {
 
     public static final int[] EMPTY_INT_ARRAY = new int[]{};

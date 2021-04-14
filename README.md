@@ -17,7 +17,8 @@
 - Vlastní datová struktura pro cache - několikanásobně rychlejší přístup než do HashSet/Hashmap
 - Krátké samostané metody nevadí - compilátor je inlinuje do volajícího kódu (například getry/setry)
 - Návratová hodnota v REST controlleru nejde použít opakovaně, nejrychlejší vytvoření odpovědi je přes
-  SimpleHttpResponseFactory.INSTANCE
+  SimpleHttpResponseFactory.INSTANCE, ale překvapivě ještě rychlejší je to neřešit a vracet přímo Java datový typ. Pokud
+  by šlo vracet stejnou odpověď opakovaně, tak by ale bylo rychlejší nejběžnější odpovědi mít předpřipravené.
 
 ## Názvy
 

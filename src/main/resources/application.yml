@@ -1,3 +1,2 @@
-micronaut:
-  application:
-    name: autocomplete
+micronaut.application.name: autocomplete
+dataPath: data
