@@ -1,0 +1,11 @@
+# Při vyhledávání se do searchWordPrefixMatch znaků musí zadat slovo celé, od searchWordPrefixMatch + 1 znaků stačí zadat prefix slova délky alespoň searchWordPrefixMatch
+searchWordPrefixMatch=4
+# Při vyhledávání lze zadat libovolný podřetězec slova délky alespoň searchWordMiddleMatch
+searchWordMiddleMatch=5
+# Na dotaz se vrací maximálně responseObjectsLimit nalezených objektů
+# Pokud se překročí tento počet, považuje se dotaz za málo restriktivní a nevrátí se žádný objekt
+responseObjectsLimit=20
+# Při vyhledávání podle i-tého nejvíce restriktivního slova (první slovo má index 0) může zbývat k prohledání v indexu pouze indexSkipObjectsLimit[i] objektů pro další úroveň indexu
+# Pro méně objektů než je min z intervalu se prohledá vždy pole potenciálních kandidátů, případně se přímo vrátí předpřipravená odpověď
+# Pokud se překročí max z intervalu, považuje se dotaz za málo restriktivní a nevrátí se žádný objekt
+indexLevelObjectsLimit=21-20000, 31-2000, 41-200, 51-20
